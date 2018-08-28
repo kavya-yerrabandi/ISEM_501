@@ -1,0 +1,248 @@
+<!doctype html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <meta charset="UTF-8">
+    <title>Indian deli</title>
+    <meta name="description" content="Awaiting to get a taste of some good Indian food? Here is the best place for you">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+    <body>
+        <nav>
+            <a class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">Home</a>
+            <a class="tablinks" onclick="openTab(event, 'menu')">Menu</a>
+            <a class="tablinks" onclick="openTab(event, 'orderOnline')">Order Online</a>
+            <a class="tablinks" onclick="openTab(event, 'reservation')">Make a reservation</a>
+            <div class="page-search">
+                <form>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <a class="tablinks" onclick="openTab(event, 'login')" id="loginBtn">Login</a>
+        </nav>
+
+        <header>
+            <h1 class="page-heading">Indian Deli</h1>
+        </header>
+
+        <div id="home" class="tabcontent">
+            <img src="lib/images/thali.jpg" alt="Indian thaali" class="image-center">
+        </div>
+
+        <div id="menu" class="tabcontent">
+            <h2 class="page-heading">Menu</h2>
+            <div class="content-row">
+                <div class="content-column">
+                    <h4>Appetizers</h4>
+                    <ul class="menu-list">
+                        <li>Idly Sambar</li>
+                        <li>Medu Vada</li>
+                        <li>Chili Pakora</li>
+                        <li>Veg Pakora</li>
+                        <li>Veg Samosa</li>
+                        <li>Aloo Bonda</li>
+                        <li>Gobi 65</li>
+                        <li>Veg Manchuria</li>
+                        <li>Gobi Manchuria</li>
+                        <li>Paneer Manchuria</li>
+                    </ul>
+                </div>
+                <div class="content-column">
+                    <h4>Soups</h4>
+                    <ul class="menu-list">
+                        <li>Tomato Soup</li>
+                        <li>Sweet Corn Soup</li>
+                        <li>Rasam</li>
+                        <li>Mulligatwany Soup</li>
+                    </ul>
+                    <h4>Dosa</h4>
+                    <ul class="menu-list">
+                        <li>Plain Dosa</li>
+                        <li>Masala Dosa</li>
+                        <li>Mysore Masala Dosa</li>
+                        <li>Onion Dosa</li>
+                        <li>Rava Dosa</li>
+                    </ul>
+                </div>
+                <div class="content-column">
+                    <h4>Flavored Rice</h4>
+                    <ul class="menu-list">
+                        <li>Veg Pulao</li>
+                        <li>Curd Rice</li>
+                        <li>Tamarind Rice</li>
+                        <li>Lemon Rice</li>
+                        <li>Tomato Rice</li>
+                    </ul>
+                    <h4>Breads</h4>
+                    <ul class="menu-list">
+                        <li>Puri</li>
+                        <li>Batura</li>
+                        <li>Naan</li>
+                        <li>Garlic Naan</li>
+                        <li>Tandoori Roti</li>
+                    </ul>
+                </div>
+                <div class="content-column">
+                    <h4>Curries</h4>
+                    <ul class="menu-list">
+                        <li>Paneer Tikka Masala</li>
+                        <li>Palak Paneer</li>
+                        <li>Kadai Paneer</li>
+                        <li>Baingan Bharta</li>
+                        <li>Chana Masala</li>
+                        <li>Malai Kofta</li>
+                        <li>Dal Makhani</li>
+                        <li>Dal Tadka</li>
+                        <li>Bhindi Masala</li>
+                        <li>Aloo Gobi</li>
+                    </ul>
+                </div>
+                <div class="content-column">
+                    <h4>Sides</h4>
+                    <ul class="menu-list">
+                        <li>Plain Rice</li>
+                        <li>Mango Pickle</li>
+                        <li>Sambar</li>
+                        <li>Papad</li>
+                    </ul>
+                    <h4>Desserts</h4>
+                    <ul class="menu-list">
+                        <li>Rasmalai</li>
+                        <li>Gulab Jamun</li>
+                        <li>Carrot Halwa</li>
+                        <li>Kheer</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="orderOnline" class="tabcontent">
+            <form id="orderForm">
+                <p>
+                    <label for="pickUpTime">Pick Up Time</label>
+                    <input type="time" class="form-control" id="pickUpTime" placeholder="HH:MM">
+                </p>
+                <p>
+                    <label for="orderName">Name</label>
+                    <input type="text" class="form-control" id="orderName" placeholder="Enter Your Name">
+                </p>
+                <p>
+                    <label for="orderPhone">Phone</label>
+                    <input type="tel" class="form-control" id="orderPhone" placeholder="Enter Your Phone">
+                </p>
+                <p>
+                    <label for="orderEmail">Email</label>
+                    <input type="email" class="form-control" id="orderEmail" placeholder="example@domain.com">
+                </p>
+                <p>
+                    <label for="orderDescription">Name</label>
+                    <select type="text" class="form-control" id="orderDescription">
+                        <option>Idly Sambar</option>
+                        <option>Medu Vada</option>
+                        <option>Chili Pakora</option>
+                        <option>Veg Pakora</option>
+                        <option>Veg Samosa</option>
+                        <option>Aloo Bonda</option>
+                        <option>Gobi 65</option>
+                        <option>Veg Manchuria</option>
+                        <option>Gobi Manchuria</option>
+                        <option>Paneer Manchuria</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="orderSize">Order Size</label>
+                    <input type="number" class="form-control" id="orderSize" placeholder="enter # of items">
+                </p>
+                <p>
+                    <button type="submit" class="btn large-btn btn-primary">Place Order</button>
+                    <button type="button" class="btn btn-link">Add to Order</button>
+                </p>
+            </form>
+        </div>
+
+        <div id="reservation" class="tabcontent">
+                <form id="reservationForm">
+                    <p>
+                        <label  for="reserveDate">Date</label>
+                        <input type="date" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY">
+                    </p>
+                    <p>
+                        <label for="reserveTime">Time</label>
+                        <input type="time" class="form-control" id="reserveTime" placeholder="HH:MM">
+                    </p>
+                    <p>
+                        <label for="reserveName">Name</label>
+                        <input type="text" class="form-control" id="reserveName" placeholder="Enter Your Name">
+                    </p>
+                    <p>
+                        <label for="reservePhone">Phone</label>
+                        <input type="tel" class="form-control" id="reservePhone" placeholder="Enter Your Phone">
+                    </p>
+                    <p>
+                        <label for="reserveEmail">Email</label>
+                        <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com">
+                    </p>
+                    <p>
+                        <label for="reserveSize">Party Size</label>
+                        <input type="number" class="form-control" id="reserveSize" placeholder="# Guests">
+                    </p>
+                    <p>
+                        <label for="reserveSpecial">Special Need</label>
+                        <input type="email" class="form-control" id="reserveSpecial" placeholder="e.g. Birthday, Anniversary etc.">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn large-btn btn-primary">Reserve</button>
+                        <button type="button" class="btn btn-link">Change Existing Reservation?</button>
+                    </p>
+                </form>
+        </div>
+
+        <div id="login" class="tabcontent">
+            <form id="loginForm">
+                <p>
+                    <label for="userName">Username</label>
+                    <input type="text" class="form-control" id="userName" placeholder="Enter Your Username">
+                </p>
+                <p>
+                    <label for="userPassword">Password</label>
+                    <input type="password" class="form-control" id="userPassword" placeholder="Enter Your Password">
+                </p>
+                <p>
+                    <button type="submit" class="btn large-btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-link">Forgot Password?</button>
+                </p>
+            </form>
+        </div>
+
+        <footer class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p><a>Phone: 463-335-7378(ind-del-serv)</a></p>
+                    <p><a>Email: indeli@gmail.com</a></p>
+                </div>
+                <div class="footer-column">
+                    <h4>Address</h4>
+                    <p>357 Market St, Harrisburg, PA 17101</p>
+                </div>
+                <div class="footer-column">
+                <h4>Follow Us</h4>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Google +</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="lib/script.js"></script>
+    </body>
+</html>

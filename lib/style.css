@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, div .footer-column {
+    background-color: #FE9D0B;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a{
+     float: left;
+     display: block;
+     color: #FFFFFF;
+     text-align: center;
+     padding: 14px 16px;
+     font-size: 17px;
+     text-decoration: none;
+}
+
+nav #loginBtn{
+    float: right;
+}
+
+nav .page-search button {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #FECD83;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF
+}
+
+nav a:hover:not(.active) {
+    background-color: #FFFFFF;
+    color: #FE9D0B;
+    cursor: pointer;
+}
+
+nav a.active, nav .page-search button:hover {
+    background-color: #4CAF50;
+}
+
+nav input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 6px;
+    font-size: 17px;
+}
+
+.page-heading{
+    color: #1A15B2;
+    text-align: center;
+}
+
+.content-column{
+    width: 20%;
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.content-column h4{
+    margin-bottom: 6px;
+    color: #4CAF50;
+}
+
+.menu-list{
+    list-style: none;
+    color: #1A15B2;
+    margin: 0;
+    padding: 0;
+}
+
+.content-row, .footer-row {
+    display: flex;
+    width: 100%;
+}
+
+/* Create three equal columns that floats next to each other */
+.content-column, .footer-column {
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+}
+
+#reservationForm, #orderForm, #loginForm{
+    text-align: center;
+}
+
+#reservationForm button, #orderForm button, #loginForm button{
+    background-color: #1A15B2;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#reservationForm input, #orderForm input, #orderForm select, #loginForm input{
+    border: 1px solid #FE9D0B;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+
+footer h4, footer p {
+    color: #FFFFFF;
+}
+
+footer {
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:100%;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    nav a, nav input[type=text], .page-search button, nav #loginBtn{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .footer-row, .footer-column, .content-row, .content-column {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav input[type=text] {
+        border: 1px solid #ccc;
+    }
+    footer {
+        position:relative;
+    }
+}
+
